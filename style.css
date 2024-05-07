@@ -1,0 +1,104 @@
+/* import google font - poppins font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body,
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  height: 100vh;
+  background: #000;
+  background-image: url(./files/lofi.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  width: 450px;
+  backdrop-filter: blur(16px) saturate(180%);
+  padding: 30px;
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  flex-direction: column;
+}
+
+.container img {
+  font-size: 24px;
+}
+
+.container h1 {
+  margin-top: 20px;
+  color: #fff;
+}
+
+.container .content {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.container .content.disable {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.container .content .controls {
+  width: 100%;
+}
+
+.container .content .controls select {
+  width: 100%;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.container button {
+  margin-top: 15px;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  background: linear-gradient(90deg, #bf7aed, #74cdec);
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.container button:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(17, 25, 40, 0.75),
+    rgba(17, 25, 40, 0.75)
+  );
+}
+
+select {
+  background: rgba(17, 25, 40, 0.75);
+  cursor: pointer;
+  color: #fff;
+  position: relative;
+}
+
+select::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+select::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 5px;
+}
