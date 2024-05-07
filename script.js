@@ -48,7 +48,6 @@ function checkState(state){
         content.classList.add('disable')
         setAlarmBtn.innerText = 'clear Alarm'
         alarmState = 'set'
-         document.getElementById("img").src = "./files/alarm-clock-A.apng"
 
     }else{
         content.classList.remove('disable')
